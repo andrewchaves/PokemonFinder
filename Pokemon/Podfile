@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Pokemon' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Pokemon
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'Alamofire', '~> 5.0.0-rc.2'
+  pod 'ObjectMapper', '~> 6.2.0'
+  pod 'AlamofireObjectMapper', '~> 3.5.1'
+
+  target 'PokemonTests' do
+    inherit! :search_paths
+    
+  end
+
+  target 'PokemonUITests' do
+    # Pods for testing
+  end
+
+end
